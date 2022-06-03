@@ -1,0 +1,84 @@
+body
+{
+	background-color:black;
+}
+
+
+
+p
+{
+	color:white; 
+	font-size:50; 
+	text-align:center;
+}
+p span
+{
+	background-color:blue;
+}
+
+
+
+h1 
+{	
+	color:white;
+	font-size:30;
+	text-align:center;
+}
+
+h1 span
+{
+	background-color:red;
+}
+
+
+
+.text1
+{
+	color:green;
+	font-size:20;
+	text-align:right;
+}
+.text1 span
+{
+	background-color:yellow;
+}
+
+
+
+
+div 
+{
+	color:blue;
+	font-size: 35;
+	text-align:center;
+}
+
+
+
+
+.font_1
+{
+	background-color:black;
+	color:yellow;
+	font-size:large;
+}
+
+.font_2
+{
+	background-color: darkblue;
+	color: white;
+	font-size: medium;
+}
+
+.My_Style
+{
+	color:lightblue;
+	font-weight:bold;
+	font-size:large;
+}
+	
+	.My_Style span
+{
+	background-color:black;
+	
+}
