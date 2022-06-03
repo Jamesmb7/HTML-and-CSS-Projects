@@ -1,0 +1,47 @@
+p 
+{
+	color:red;
+	font-style:italic;
+	font-size:40;
+	text-align:center;
+}
+
+p span
+{
+	background-color:darkblue;
+}
+
+body
+{
+	background-color:black;
+}
+
+footer
+{
+	color:red;
+	font-size:20;
+	text-align:left;
+	text-align:bottom;
+	
+}
+footer span
+{
+	background-color:darkblue;
+}
+
+div 
+{
+	position:relative;
+	left:5px;
+	top:600px;
+}
+
+.font_1
+{
+	color:red;
+	font-style:italic;
+	font-size:40;
+	text-align:center;
+	position:relative;
+	top:200;
+}
