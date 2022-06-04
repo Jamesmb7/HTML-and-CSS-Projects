@@ -1,0 +1,25 @@
+/* CSS for HTML_Table.html */
+
+table 
+{
+		border: 3px solid silver;
+}
+
+tr, th 
+{
+	background-color:black;
+	color:cornsilk;
+}
+
+tr, td
+{
+	background-color: darkgreen;
+	color: white;
+}
+
+td:hover
+{
+	background-color: yellow;
+	color: black;
+}
+
