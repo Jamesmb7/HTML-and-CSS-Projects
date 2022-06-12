@@ -1,0 +1,146 @@
+body
+{
+    background-color: #fff
+}
+
+h1 
+{
+    color: rgba(8,141,165,1);
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(0,0,0, 0.6)
+}
+
+.container
+{
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/*------------------------------------------------------------------------------------
+ Select all Squares in the Array
+  -----------------------------------------------------------------------------------*/
+
+/* this seems to work as well without .container, unless .container is
+added for future changes to the squares that this created? */
+
+.container .squares:nth-child(-n+4)
+{
+    background-image: url(../images/icons/favicon.ico);
+    color: #fff; 
+    float:left; /* makes them go side to side instead of up and down */
+    width: 50px; /*100px left and 100px right*/
+    height: 50px;/*100px up and 100px down*//*makes the square*/
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer; /* type of cursor some are arrows some is a hand finger pointer etc*/
+    transition: transform 0.5s ease-in-out; /*what? vid throws me off at this point too fast
+    and too much info without showing what it actually does??? Don't really understand
+    this very well compared to the lower section that changes with transform*/
+}
+
+/* --------------------------------------------------------------------------------------
+select all squares paragraphs in the array
+----------------------------------------------------------------------------------------*/
+
+.squares:nth-child(-n+4) p
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.5cm;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.8)
+}
+
+
+/*--------------------------------------------------------------------------------------
+ Individually Select A Square in the Array
+ ----------------------------------------------------------------------------------------*/
+
+/* there's no explanation on why these squares below
+don't need the .container addition to them when the above
+ones did*/
+
+.squares:nth-child(1)
+{
+    background: #4240ff;
+}
+
+.squares:nth-child(2)
+{
+    background: #ab3fdd;
+}
+
+.squares:nth-child(3)
+{
+    background: #ae163e;
+}
+
+.squares:nth-child(4)
+{
+    background: #00b200;
+}
+
+/*-------------------------------------------------------------------------------------
+ Hover Effects 
+ ---------------------------------------------------------------------------------------*/
+
+/* Hover, Translate, & Transform Effects*/ 
+
+/* Changes this section at the very end from Hover to Hover etc.
+adding a bunch of code to do different thingsnot sure what it does yet*/
+
+/* why do these need .container again? */
+
+.container .squares:nth-child(-n+4):hover
+{
+    background-image: url("../images/Icons/favicon.ico");
+    transform: scale(1.5);
+    animation-name: race;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3,);
+}
+
+.squares:nth-child(1):hover
+{
+    background: #13b4ff
+}
+
+.squares:nth-child(2):hover
+{
+    background: #d861af
+}
+
+.squares:nth-child(3):hover
+{
+    background: #81205f
+}
+
+.squares:nth-child(4):hover
+{
+    background: #77b800
+}
+
+@keyframes race
+{
+    0%, 100%
+    {
+        transform:translateY(0px);
+        background-image:url(../images/Icons/favicon.ico);
+    }
+    50%
+    {
+        transform: translateY(330px);
+        
+    }
+    25%
+    {  
+        transform:scale(1.5)
+    }
+}
+/* Why does this keyframe remove the scaling factor of the image? */
