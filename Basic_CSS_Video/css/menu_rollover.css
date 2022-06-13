@@ -36,7 +36,7 @@ body
     color: #B3B3B3;
     display: inline-block;
     margin-right: -2px;
-    position: relateive;
+    position: relative;
     padding: 12px 40px;
     border: 1px solid #9d9fa2;
     border-radius: 1.5px;
@@ -63,14 +63,14 @@ body
 I have to adjust the left position in the below code to force it to align. */
 {
     padding:0;
-    left:233;
+    left:0;
     position:absolute;
     top: 43.5px;
     width: 125.5px;
     opacity:1;
     /*while not being hovered, drop down-menu hides
     this also avoids a block-level bug */
-    visibility: visible;
+    visibility: hidden;
 }
 
 .submenu li
@@ -84,6 +84,7 @@ I have to adjust the left position in the below code to force it to align. */
 {
     color: #fff;
     background-color: #5EAFDF;
+    position:absolute;
 }
 
 /* I left myself many notes and questions about this CSS that really had me confused,
