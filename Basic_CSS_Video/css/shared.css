@@ -187,7 +187,7 @@ HOME SECTION STYLES
     color:#fff;
     letter-spacing:5pt;
     word-spacing:21pt;
-    font-size:4.5cm;
+    font-size:3.5cm;
     text-align:left;
     font-family: impact, sans-serif;
     line-height:2;
@@ -330,7 +330,10 @@ CONTACT STYLES
 {
     margin: 30px 1px 0 0;    /*which order are these in?*/
     margin-top: 13%; /*this doesn't seem to do anything*/
-    padding-left: 500px;       /*yeah this doesn't line up at all with it set to 52*/
+    position:relative;
+    display:inline;
+    float:right;
+    padding-left: 52px;       /*yeah this doesn't line up at all with it set to 52*/
     font-size:14px;
     line-height:5px;
     color:#000;
@@ -384,4 +387,37 @@ FOOTER STYLES
     text-align: right;
 }
 
+@media all and (max-width:640px) and (min-width:381px)
+{
+    .head-main{
+        font-size:24px;
+    }
+}
 
+@media all and (max-width:381px) and (min-width:200px)
+{
+    .head-main{
+        font-size:24px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .container{
+        width:  750px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .container{
+        width:970px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .container{
+        width:1170px;
+    }
+}
