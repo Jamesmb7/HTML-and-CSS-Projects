@@ -1,0 +1,385 @@
+html
+{/*what do these last 3 do exactly?*/
+    font-family: sans-serif; 
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body
+{
+    font-size: 14px;
+    margin:0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height:1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+footer, nav /*where is the nav section coming from here? Only nav I see are from my notes.*/
+{
+    display:block;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Open Sans', sans-serif;
+}
+/* these next sections are gone through at the speed of light? with little expl
+anation of what each of these things do?*/
+h1
+{
+    line-height:50px;
+    font-weight:900;
+    font-size:30px;
+    text-transform:uppercase;
+    text-align:center;
+    color:#E91C1C;
+    margin: 5px auto 40px;
+
+}
+
+h1::after /*why are there two "::" here? What does this do? This has never been shown or mentioned.
+This part is skipped over super fast. The code applies the underline but
+no idea what the "::" or after is here for.*/
+{
+    display:block;
+    content:"";
+    height:2px;
+    width:150px;
+    background:#e91c1c;
+    margin:5px auto 40px;
+    box-shadow:5px 2px 3px rgba(0,0,0,0.5)
+}
+
+h2
+{
+    line-height:50px;
+    color: #e91c1c;
+}
+
+h3
+{
+    line-height:30px;
+    padding-bottom:20px;
+}
+
+h4
+{
+    padding-top:25px;
+    line-height:40px;
+    padding-bottom:0px;
+    font-size:22px;
+    font-weight:900;
+}
+
+p
+{
+    font-weight:300;
+    line-height:30px;
+    padding-bottom:15px;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.heading-padding
+{
+    padding-bottom:40px;
+}
+
+section
+{
+    padding-top:50px;
+    margin-top:50px;
+}
+
+.navbar /*what is this? This class is nowhere in the html code thus far???*/
+{
+    height:105px;
+    max-height:340px;
+    display:block;
+}
+
+.container
+{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.container-flud
+{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.row
+{
+    margin:right -15px;
+    margin:left -15px;
+}
+
+.clearfix:after,
+.container:after, /* I have no idea what any of this section of code is or does*/
+.navbar::after /* none of this has been shown or explained at all has me lost */
+{
+    clear:both;
+    display: table;
+    content: "";
+}
+
+.wrap
+{
+    height:100%;
+    width:100%;
+    position:absolute;
+    /*This ensures that the images cannot render outside
+    of their container without forcing any scrollbars*/
+    overflow:hidden;
+    top:0;
+    left:0;
+    text-align:center;
+}
+
+.menu-container
+{
+    max-height:340px;
+    margin: 0% auto;
+    content:"";
+    /* 0% is margin top and bottom both 0, auto is right and left auto margin*/
+    width: 100%;
+    position:fixed;
+    z-index:100; /*forces menu to always be on top of every layer of each page*/
+}
+
+
+/*===============================================================================
+HOME SECTION STYLES
+================================================================================*/
+
+#home
+{
+ background: url(../../Space_Station_Website/images/Thumb/background_planets.jpg) no-repeat 50% 50%;
+ background-attachment:fixed;
+ -webkit-background-size: cover;
+ -moz-background-size:cover;
+ -o-background-size:cover;
+ background-size:cover;
+ width:100%;
+ display:block;
+ height:auto;
+ padding-top: 350px; /* This is spacer before Main Title logo*/
+ padding-bottom: 500px; /*this is spacer after main title logo*/
+ color: #fff;
+}
+
+.head-main
+{
+    text-shadow:2px 4px 5px rgba(0,0,0,0.9);
+    font-variant:small-caps;
+    color:#fff;
+    letter-spacing:5pt;
+    word-spacing:21pt;
+    font-size:4.5cm;
+    text-align:left;
+    font-family: impact, sans-serif;
+    line-height:2;
+    font-weight: 900;
+    border:5px double #fff; /* what is double here?*/
+    padding: 10px;
+}
+
+.head-sub-main /*what is this??*/
+{
+    font-size:23px;
+    font-weight:500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last /*again, where is this in the html code we wrote??*/
+{
+    font-size:18px;
+    font-weight: 900;
+    padding:5px 20px 20px 20px;
+    border:1px dotted #fff; /* assume dotted is just dots instead of a line?*/
+    padding:5px; 
+    /*many different padding values I'm not sure what each one does 5, 20, 20, 20 etc.*/
+}
+
+/*=====================================================================================
+CONTACT STYLES
+======================================================================================*/
+
+.flex-container
+{
+    display:-webkit-flex; /*again what?*/
+    display: flex;
+    flex-wrap:wrap; /*hm*/
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100, 65, 0, .3);
+    box-shadow: 2px 2px 10px 0 rgba*(0,0,0,0.5);
+}
+
+#contact /*why are these # instead of .? Is that due to it being an id and not a div?*/
+{
+    background-color: #f5f3f3;
+}
+
+.reservation
+{
+    width: 60%;
+    padding: 10px;
+    border-radius:8px;
+    margin:0px auto;
+    background-color:rgba(100,65,0,.3);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+    /*how does box shadow dictate which side to make darker with this above code?*/
+}
+
+.reservation h2
+{
+    width: 70%;
+    text-align:center;
+    margin: 0 auto;
+    color: #13161b;
+    font-weight:500;
+    font-size: 1.3cm;
+    letter-spacing:0pt;
+    word-spacing:0pt; /*what is pt standing for? */
+}
+
+.reservation h2 span
+{
+  width:70%;
+  text-align:center;
+  margin:0 auto;
+  color: #13161b;
+  font-weight:900;
+  font-size:1.5cm;
+  font-variant:small-caps;
+  letter-spacing:.4pt;
+  word-spacing: .3pt;
+}
+
+.reservation p
+{
+    color:#13161b;
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+    padding-top: 5%;
+    padding-bottom:0;
+}
+
+.reservation form
+{
+   font-size: 15px;
+   outline:none;
+   font-weight:600;
+   color:#8d8e8f;
+   padding:12px 12px;
+   width:70%;
+   border:1px solid #808080;
+   margin: 2% auto;
+   border-radius: 7px;
+   background:rgb(227,222,222);
+   box-shadow:2px 3px 3px 0px rgba(0,0,0,0.3);
+   font-family: 'Raleway', sans-serif; 
+}
+
+.reservation input[type="text"] /*why is this here?*/
+{
+    font-size:15px;
+    outline:none;
+    font-weight:600;
+    color:#8d8e8f;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1cm;
+    border-radius: 7px;
+    background:#13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15) /*inset does what again?*/
+}
+
+.reservation input[type="text"]:hover /*again, why type=text?*/
+{
+    box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+}
+
+.form-spacer
+{
+    padding: 30px 39px;
+}
+
+.terms /*Cannot get terms and conditions to align with submit button*/
+/*also highlights when hovering to left of words*/
+{
+    margin: 30px 1px 0 0;    /*which order are these in?*/
+    margin-top: 13%; /*this doesn't seem to do anything*/
+    padding-left: 500px;       /*yeah this doesn't line up at all with it set to 52*/
+    font-size:14px;
+    line-height:5px;
+    color:#000;
+    cursor:pointer;
+    font-family:'Railway', sans-serif; /*not sure what this really is either*/
+    font-weight:600;
+}
+
+.terms:hover
+{
+    color:orange;
+    text-decoration:underline;
+}
+
+.submit input[type="submit"]
+{
+    color:rgb(225,225,225);
+    cursor:pointer;
+    border:none;
+    font-weight:900;
+    outline:none;
+    text-align:center;
+    font-family:'Raleway', sans-serif;
+    margin:0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius:7px;
+    background-color:#797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover
+{
+    color:#000;
+    background-color:#8d8e8f;
+    box-shadow:inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+
+/*===============================================================================
+FOOTER STYLES
+================================================================================*/
+
+#footer
+{
+    background-color:rgba(100,65,0,.3);
+    color:#000;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4)
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
