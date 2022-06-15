@@ -1,0 +1,188 @@
+/* navbar*/
+.navbar
+{
+    overflow:hidden;
+    background-color: darkblue;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.navbar a
+{
+    color:red;
+    font-size:25px;
+    margin:5px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.navbar a:hover
+{
+    background: white;
+    color:black;
+}
+
+
+/*Picture and Footer*/
+
+.center
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    border-radius:50%;
+    filter:invert(100%);
+    transition: .5s ease;
+}
+
+
+
+.Picture_container
+{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,.9);
+    padding-top:40px;
+}
+.centered 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size:25px;
+    text-align: center;
+}
+
+
+.Picture_container img:hover
+{
+   opacity:0.1;
+}
+
+/*end picture and footer*/
+
+
+/*P element start*/
+
+
+
+.p_element
+{
+    font-size:25px;
+    font-weight:600px;
+    text-align:center;
+    background-color:beige;
+}
+
+.p_element:hover
+{
+    background-color: darkmagenta;
+    color:aqua;
+}
+
+/*P element End*/
+
+
+/*Table Stuff*/
+
+table, th, td
+{
+    text-align:center;
+    margin-top: 15px;
+    border:1px solid black;
+    height:35px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+}
+
+td
+{
+    width:400px;
+}
+
+tr:nth-child(2)
+{
+    background-color:red;
+}
+
+/*end table*/
+/*column start*/
+
+.column
+{
+    float:left;
+    height:100px;
+    width: 49.8%;
+    text-align: center;
+    background-color:beige;
+    border:1px solid black
+}
+
+
+.column p
+{
+    color:darkcyan;
+}
+
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*column end*/
+
+/*video start*/
+
+.video_size
+{
+    margin-left:auto;
+    margin-right:auto;
+} /*how would I center this video?*/
+
+.video_container
+{
+    position:relative;
+    text-align:center;
+    color:white;
+}
+
+.centered_video
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:40px;
+}
+
+
+.video:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*video end*/
+
+/*footer start*/
+
+#footer
+{
+    text-align:center;
+    padding:0 0 0 0;
+    background-color: rgba(180, 180, 180, .5);
+    font-weight: 800;
+}
+
+/*footer end*/
