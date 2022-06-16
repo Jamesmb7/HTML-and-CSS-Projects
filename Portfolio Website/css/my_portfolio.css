@@ -50,7 +50,8 @@ p:hover
 {
     transform: scale(1.01);
     transition: transform .5s;
-}
+}/*This causes the width of the page to go from fullscreen to a scroll bar
+any way to fix it?*/
 
 /*center class*/
 
