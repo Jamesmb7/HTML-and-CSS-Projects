@@ -66,6 +66,13 @@ any way to fix it?*/
     transform: scale(1.1);
 }
 
+.center_text /*Attempt at fixing the scrollbar appearing from hovering over the top text that overlays the typing video*/
+{
+    text-align:center;
+    padding-right:15px;
+    padding-left:15px;
+}
+
 /*Anchor Elements*/
 
 a
