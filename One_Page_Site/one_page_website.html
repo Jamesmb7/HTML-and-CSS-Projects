@@ -3,28 +3,29 @@
 	<head>
 		<title>Jordan Custom Leather</title>
 		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
 	<body>
 		
 		<!-- Nav -->
 		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>Home</li></a>
-					<a href="#Gallery" id="link"><li>Gallery</li></a>
-					<a href="#Contact" id="link"><li>Contact Us</li></a>
-				</ul>
+			<div class="navbar">				
+				<a href="#home" id="link">Home</a>
+				<a href="#Gallery" id="link">Gallery</a>
+				<a href="#Contact" id="link">Contact Us</a>		
 			</div>
 		</div>
 		<!-- End Nav -->
 		
 		<!-- Home --> 
 		<div id="home">
-			<div> <!-- background img for web-page -->
-				<img src="./Images/Backgrounds/home_background_1.jpg" width="1000" height = "400" alt="horse picture"
-				<div>
-					<span>Jordan Custom Leather</span> <!-- need this to overlay the above image once I find a good img -->
+			<div class="background_container">
+				<div class="background_img"> <!-- background img for web-page -->
+					<img src="./Images/Backgrounds/home_background_1.jpg" width="100%" height = "800" alt="horse picture">
+					<div class="text_Overlay">
+						<h1>Jordan Custom Leather</h1> <!-- need this to overlay the above image once I find a good img -->
+					</div>
 				</div>
 			</div>
 		</div>
@@ -34,98 +35,98 @@
 		<section>
 			<div id="Gallery">
 				<h1> Gallery </h1>
-				<div>
+				<div class="gallery_Container">
 				
 					<!-- Gallery Photo 1 -->
-					<div>
+					<div class="column1">
 						<div>
-							<div>
-							<img src="./images/thumb/purse_1.jpg" width="200" height = "200" alt="purse.img">
+							<div class="img_1">
+							<img src="./images/thumb/purse_1.jpg" width="200" height = "200" onclick=openModal();currentSlide(1) class="hover-shadow" alt="purse.img">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 2 -->
-					<div>
+					<div class="column2 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/purse_2.jpg" width="200" height = "200" alt="purse.img">
+							<div class="img_2">
+							<img src="./images/thumb/purse_2.jpg" width="200" height = "200" onclick=openModal();currentSlide(2) class="hover-shadow" alt="purse.img">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 3 -->
-					<div>
+					<div class="column3 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/grad_cap_1.jpg" width="200" height = "200" alt="graduation cap">
+							<div class="img_3">
+							<img src="./images/thumb/grad_cap_1.jpg" width="200" height = "200" onclick=openModal();currentSlide(3) class="hover-shadow" alt="graduation cap">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 4 -->
-					<div>
+					<div class="column1 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/grad_cap_2.jpg" width="200" height = "200" alt="graduation cap">
+							<div class="img_1">
+							<img src="./images/thumb/grad_cap_2.jpg" width="200" height = "200" onclick=openModal();currentSlide(4) class="hover-shadow" alt="graduation cap">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 5 -->
-					<div>
+					<div class="column2 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/shoe_1.jpg" width="200" height = "200" alt="Shoe.img">
+							<div class="img_2">
+							<img src="./images/thumb/shoe_1.jpg" width="200" height = "200" onclick=openModal();currentSlide(5) class="hover-shadow" alt="Shoe.img">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 6 -->
-					<div>
+					<div class="column3 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/shoe_2.jpg" width="200" height = "200" alt="Shoe.img">
+							<div class="img_3">
+							<img src="./images/thumb/shoe_2.jpg" width="200" height = "200" onclick=openModal();currentSlide(6) class="hover-shadow" alt="Shoe.img">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 7 -->
-					<div>
+					<div class="column1 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/wallet_1.jpg" width="200" height = "200" alt="wallet.img">
+							<div class="img_1">
+							<img src="./images/thumb/wallet_1.jpg" width="200" height = "200" onclick=openModal();currentSlide(7) class="hover-shadow" alt="wallet.img">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 8 -->
-					<div>
+					<div class="column2 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/wallet_2.jpg" width="200" height = "200" alt="wallet.img">
+							<div class="img_2">
+							<img src="./images/thumb/wallet_2.jpg" width="200" height = "200" onclick=openModal();currentSlide(8) class="hover-shadow" alt="wallet.img">
 							</div>
 						</div>
 					</div>
 					
 					<!-- Gallery Photo 9 -->
-					<div>
+					<div class="column3 column_tall">
 						<div>
-							<div>
-							<img src="./images/thumb/belt_1.jpg" width="200" height = "200" alt="belt.img">
+							<div class="img_3">
+							<img src="./images/thumb/belt_1.jpg" width="200" height = "200" onclick=openModal();currentSlide(9) class="hover-shadow" alt="belt.img">
 							</div>
 						</div>
 					</div>
-					
 					<div>
 						<div>
-							<div>
 							<a href="https://www.youtube.com/watch?v=sjwgYL1iqdk" target="_blank">Leatherworking ASMR</a>
+						</div>
+					</div>
+					<nav>
+						<a href="https://www.facebook.com/jordancustomleather"> Jordan Custom Leather FB</a>
+					</nav>
 				</div>
 			</div>
-			<nav>
-			<a href="https://www.facebook.com/jordancustomleather"> Jordan Custom Leather FB</a>
-			</nav>
 		</section>
 		<!-- Gallery End -->
 		
