@@ -2,9 +2,10 @@
 <html lang="en">
     <!--Head-->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
     <title>James Bennett's Portfolio</title>
+    <link rel="shortcut icon" type="img/jpg" href="">
     <link rel="stylesheet" type="text/css" href="./css/my_portfolio.css">
 
 </head>
@@ -15,12 +16,14 @@
     <!--Navbar-->
     <div class="Navbar">
         <a class="active" href="#home">Home</a>
+        <!-- New Section Here added-->
+        <a href="#Slideshow">Slideshow</a>
         <a href="#About">About</a>
         <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
+        <!-- Onclick and ondblclick functions added to open and clsoe the contact form -->
+        <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a>
     </div>
-    <br>
-    <br>
+    
     <!--Possible Breaks needed here, will look back later!!-->
 
     <!--Background Video-->
